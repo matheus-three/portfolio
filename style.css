@@ -1,0 +1,29 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css';
+
+.aside {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 786px) {
+    .aside {
+        position: static;
+    }
+}
+
+.aside > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; 
+}
+
+.row {
+    justify-content: flex-end;
+}
